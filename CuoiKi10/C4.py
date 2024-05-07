@@ -1,15 +1,16 @@
-string = str(input('Nhập 1 xâu ký tự: '))
-kytucantim = str(input('Nhập ký tự cần tìm trong xâu: '))
+string = input("Nhập 1 xâu kí tự: ") # Khai báo xâu kí tự và kí tự cần tìm
+kitucantim = input("Nhập 1 kí tự cần tìm: ")
 
-def appearence(str, char):
-    appear = 0
+def timkitu(str, char): # Khai báo hàm trong đó | str là tham số chỉ xâu | char là tham số chỉ kí tự
+    
+    xuathien = 0 # Khai báo biến đếm số lần kí tự xuất hiện
 
-    for i in str:
+    for i in str: # Duyệt từng kí tự trong xâu
 
-        if i == char:
+        if i == char: # Xét nếu kí tự trùng với kí tự cần tìm
 
-            appear += 1
+            xuathien = xuathien + 1 # Nếu thỏa mãn tăng giá trị đếm lên 1
 
-    return appear
+    return xuathien # Trả lại giá trị xuất hiện
 
-print('Trong xâu ký tự đã xuất hiện', appearence(string, kytucantim) , "lần")
+print('Trong xâu ký tự đã xuất hiện', timkitu(string, kitucantim) ) # Gọi hàm trong print
