@@ -4,7 +4,7 @@ def Tach_day(xlist): # Khai báo hàm | xlist là tham số
     B = [] # Khai báo danh sách B và C
     C = []
 
-    for i in range(len(xlist)): # Đếm các chỉ số i từ 0 đến tổng số phần tử của danh sách xlist
+    for i in range(len(xlist)): # Lặp i từ 0 đến tổng số phần tử của danh sách xlist
 
         if i % 2 == 0: # Xét nếu chỉ số chẵn
 
