@@ -1,2 +1,3 @@
-# h0void
-All my Python projects are here :)
+# Python
+
+Some of my work I made while learning new stuff on Python :)
